@@ -1,0 +1,24 @@
+{
+  "name": "lists",
+  "homepage": "https://github.com/dma315/lists",
+  "authors": [
+    "dma315 <dma315@gmail.com>"
+  ],
+  "description": "Lists app",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
