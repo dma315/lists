@@ -23,6 +23,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Angular gems
+gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
+
+
 # Need to add fake data
 gem 'faker'
 
