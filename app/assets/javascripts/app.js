@@ -8,7 +8,12 @@ App.config([
       .state('lists', {
         url: '/lists',
         templateUrl: 'views/lists/_list.html',
-        controller: 'ListsController'
+        controller: 'ListsController',
+        resolve: {
+          listPromise: ['lists', function(lists) {
+            return lists.getAll();
+          }]
+        }
       })
 
     $urlRouterProvider.otherwise('lists')
