@@ -7,4 +7,6 @@ class ApplicationController < ActionController::Base
     render '/index'
   end
 
+  respond_to :json
+
 end
