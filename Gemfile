@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'angular-rails-templates'
 gem 'angular_rails_csrf'
 
+# Allows application level respond_to method
+gem 'responders'
 
 # Need to add fake data
 gem 'faker'
