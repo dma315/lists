@@ -1,6 +1,7 @@
 App.controller('ListsController', [
+  'lists',
   '$scope',
-  function($scope) {
-    $scope.hello = "Hello world!"
+  function(lists, $scope) {
+    $scope.lists = lists.lists;
   }
   ])
