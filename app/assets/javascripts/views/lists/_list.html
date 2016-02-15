@@ -1,0 +1,26 @@
+<h1>All Lists</h1>
+<div class="panel-group" id="accordion">
+  <div ng-repeat="list in lists" class="panel panel-default">
+    
+    <div class="panel-heading flex-container">
+      <h4 class="panel-title list-title">
+        <a href="/lists/{{list.id}}">{{list.title}}</a>
+      </h4>
+      <div class="panel-buttons list-buttons">
+        <a class="plus-minus-toggler" data-toggle="collapse" data-parent="#accordion" href="#{{list.id}}">
+          <button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="{{list.id}}" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{list.description}}
+      </div>
+    </div>
+
+
+  </div>
+</div>
